@@ -16,58 +16,62 @@
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
+        ,
         <div class="weather-app">
-          <form id="search-form" class="mb-3">
-            <div class="row">
-              <div class="col-9">
-                <input
-                  type="search"
-                  placeholder="Type a city.."
-                  class="form-control"
-                  id="city-input"
-                  autocomplete="off"
-                />
-              </div>
-              <div class="col-3">
-                <input
-                  type="submit"
-                  value="Search"
-                  class="btn btn-primary w-100"
-                />
-              </div>
-            </div>
-          </form>
-          <div class="overview">
-            <h1 id="city">New York</h1>
-            <ul>
-              <li>Last updated: <span id="date"> Friday 5 November </span></li>
-              <li id="description">Cloudy with a chance of rain</li>
-            </ul>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <div class="clearfix weather-temperature">
-                <img
-                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                  alt="Clear"
-                  id="icon"
-                  class="float-left"
-                />
-                <div class="float-left">
-                  <strong id="temperature"> 50 </strong
-                  ><span class="units"> °C |°F</span>
+          <div class="weather-app">
+            <form id="search-form" class="mb-3">
+              <div class="row">
+                <div class="col-9">
+                  <input
+                    type="search"
+                    placeholder="Type a city.."
+                    class="form-control"
+                    id="city-input"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="col-3">
+                  <input
+                    type="submit"
+                    value="Search"
+                    class="btn btn-primary w-100"
+                  />
                 </div>
               </div>
-            </div>
-            <div class="col-6">
+            </form>
+            <div class="overview">
+              <h1 id="city">New York</h1>
               <ul>
-                <li>Humidity: <span id="humidity">0</span>%</li>
-                <li>Wind: <span id="wind">20</span> m/h</li>
-                <li>Precipitation: <span id="precipitation">0</span> %</li>
+                <li>
+                  Last updated: <span id="date"> Friday 5 November </span>
+                </li>
+                <li id="description">Cloudy with a chance of rain</li>
               </ul>
             </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="clearfix weather-temperature">
+                  <img
+                    src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                    alt="Clear"
+                    id="icon"
+                  />
+                  <div class="float-left">
+                    <strong id="temperature"> 50 </strong
+                    ><span class="units"> °C |°F</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li>Humidity: <span id="humidity">0</span>%</li>
+                  <li>Wind: <span id="wind">20</span> m/h</li>
+                  <li>Precipitation: <span id="precipitation">0</span> %</li>
+                </ul>
+              </div>
+            </div>
+            <div class="weather-forecast" id="forecast"></div>
           </div>
-          <div class="weather-forecast" id="forecast"></div>
         </div>
         <small>
           <a

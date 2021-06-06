@@ -10,6 +10,8 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -39,7 +41,7 @@
             </div>
           </form>
           <div class="overview">
-            <h1 id="city">New York</h1>
+            <h1 id="city"></h1>
             <ul>
               <li>Last updated: <span id="date"> Friday 5 November </span></li>
               <li id="description">Cloudy with a chance of rain</li>
@@ -55,15 +57,15 @@
                   class="float-left"
                 />
                 <div class="float-left">
-                  <strong id="temperature">50</strong
+                  <strong id="temperature"></strong
                   ><span class="units"> °C | <a href="#">°F </a> </span>
                 </div>
               </div>
             </div>
             <div class="col-6">
               <ul>
-                <li>Humidity: <span id="humidity">0</span>%</li>
-                <li>Wind: <span id="wind">20</span> m/h</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind">20</span> km/h</li>
                 <li>Precipitation: <span id="precipitation">0</span> %</li>
               </ul>
             </div>
